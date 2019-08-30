@@ -11,7 +11,7 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/woodpav/tal",
-    version="0.0.1",
+    version="0.0.2",
     packages=["src"],
     include_package_data=True,
     install_requires=["click"],
