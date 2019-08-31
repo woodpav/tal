@@ -2,7 +2,7 @@
 
 import click
 
-from .deploy import deploy_app
+from .func import func
 
 
 @click.group()
@@ -10,8 +10,4 @@ def cli():
     pass
 
 
-@cli.command()
-@click.argument('name')
-@click.option('--stage', default='dev', help='One of dev or prod.')
-def deploy(name, stage):
-    deploy_app(stage, name)
+cli.add_command(func)

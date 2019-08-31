@@ -6,16 +6,17 @@ Deploys python GCP Functions with private git requirements.
 
     pip install tal
 
-### Usage:
+### Deploying Functions:
 
 
   1. Add the following to `main.py`
+  
           import sys
           sys.path.append('lib')
 
   1. Put git dependencies in `private_requirements.txt`.
   2. Make sure there is no `lib/` directory.
-  3. Run `tal deploy my_func --stage dev`.
+  3. Run `tal func deploy my_func --stage dev`.
 
 ### Inspiration
 
