@@ -12,7 +12,7 @@ setup(
     long_description_content_type="text/markdown",
     url="https://github.com/woodpav/tal",
     version="0.0.4",
-    packages=["src"],
+    packages=find_packages(),
     include_package_data=True,
     install_requires=["click"],
     entry_points="""
