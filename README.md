@@ -34,6 +34,11 @@ Deploys python GCP Functions with private git requirements.
   1. Run `tal storage delete-bucket my_bucket`
 
 
+### Uploading Files:
+
+  1. Run `tal storage upload my_file.txt --bucket=my_bucket --path=my/nested/path`
+
+
 ### Inspiration
 
 Build like Tal: https://www.youtube.com/watch?v=CF6w2-WNZLE

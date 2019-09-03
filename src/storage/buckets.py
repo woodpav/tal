@@ -2,13 +2,7 @@
 
 import subprocess
 
-
-def with_bucket_name(func):
-    def deco(name, *original_args, **original_kwargs):
-        name = f"gs://{name}/"
-        return func(name, *original_args, **original_kwargs)
-
-    return deco
+from .helpers import with_bucket_name
 
 
 @with_bucket_name
